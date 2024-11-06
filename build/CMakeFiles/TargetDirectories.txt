@@ -1,0 +1,3 @@
+C:/Users/alexa/Desktop/LlavaWebCam/build/CMakeFiles/LlavaWebCam.dir
+C:/Users/alexa/Desktop/LlavaWebCam/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/alexa/Desktop/LlavaWebCam/build/CMakeFiles/ZERO_CHECK.dir
