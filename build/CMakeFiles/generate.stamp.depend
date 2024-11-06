@@ -1,0 +1,73 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeCInformation.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeCXXInformation.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDependentOption.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeGenericSystem.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeRCInformation.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckIncludeFile.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckLibraryExists.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Compiler/MSVC.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/FindPackageMessage.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/FindTIFF.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/FindThreads.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/FindZLIB.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Platform/Windows.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/SelectLibraryConfigurations.cmake
+C:/Users/alexa/Desktop/LlavaWebCam/CMakeLists.txt
+C:/Users/alexa/Desktop/LlavaWebCam/build/CMakeFiles/3.29.5-msvc4/CMakeCCompiler.cmake
+C:/Users/alexa/Desktop/LlavaWebCam/build/CMakeFiles/3.29.5-msvc4/CMakeCXXCompiler.cmake
+C:/Users/alexa/Desktop/LlavaWebCam/build/CMakeFiles/3.29.5-msvc4/CMakeRCCompiler.cmake
+C:/Users/alexa/Desktop/LlavaWebCam/build/CMakeFiles/3.29.5-msvc4/CMakeSystem.cmake
+C:/vcpkg/installed/x64-windows/share/absl/abslConfig.cmake
+C:/vcpkg/installed/x64-windows/share/absl/abslConfigVersion.cmake
+C:/vcpkg/installed/x64-windows/share/absl/abslTargets-debug.cmake
+C:/vcpkg/installed/x64-windows/share/absl/abslTargets-release.cmake
+C:/vcpkg/installed/x64-windows/share/absl/abslTargets.cmake
+C:/vcpkg/installed/x64-windows/share/curl/CURLConfig.cmake
+C:/vcpkg/installed/x64-windows/share/curl/CURLConfigVersion.cmake
+C:/vcpkg/installed/x64-windows/share/curl/CURLTargets-debug.cmake
+C:/vcpkg/installed/x64-windows/share/curl/CURLTargets-release.cmake
+C:/vcpkg/installed/x64-windows/share/curl/CURLTargets.cmake
+C:/vcpkg/installed/x64-windows/share/curl/vcpkg-cmake-wrapper.cmake
+C:/vcpkg/installed/x64-windows/share/opencv/vcpkg-cmake-wrapper.cmake
+C:/vcpkg/installed/x64-windows/share/opencv4/OpenCVConfig-version.cmake
+C:/vcpkg/installed/x64-windows/share/opencv4/OpenCVConfig.cmake
+C:/vcpkg/installed/x64-windows/share/opencv4/OpenCVModules-debug.cmake
+C:/vcpkg/installed/x64-windows/share/opencv4/OpenCVModules-release.cmake
+C:/vcpkg/installed/x64-windows/share/opencv4/OpenCVModules.cmake
+C:/vcpkg/installed/x64-windows/share/protobuf/protobuf-config-version.cmake
+C:/vcpkg/installed/x64-windows/share/protobuf/protobuf-config.cmake
+C:/vcpkg/installed/x64-windows/share/protobuf/protobuf-generate.cmake
+C:/vcpkg/installed/x64-windows/share/protobuf/protobuf-module.cmake
+C:/vcpkg/installed/x64-windows/share/protobuf/protobuf-options.cmake
+C:/vcpkg/installed/x64-windows/share/protobuf/protobuf-targets-debug.cmake
+C:/vcpkg/installed/x64-windows/share/protobuf/protobuf-targets-release.cmake
+C:/vcpkg/installed/x64-windows/share/protobuf/protobuf-targets.cmake
+C:/vcpkg/installed/x64-windows/share/protobuf/vcpkg-cmake-wrapper.cmake
+C:/vcpkg/installed/x64-windows/share/quirc/quirc-config-debug.cmake
+C:/vcpkg/installed/x64-windows/share/quirc/quirc-config-release.cmake
+C:/vcpkg/installed/x64-windows/share/quirc/quirc-config.cmake
+C:/vcpkg/installed/x64-windows/share/tiff/vcpkg-cmake-wrapper.cmake
+C:/vcpkg/installed/x64-windows/share/utf8_range/utf8_range-config.cmake
+C:/vcpkg/installed/x64-windows/share/utf8_range/utf8_range-targets-debug.cmake
+C:/vcpkg/installed/x64-windows/share/utf8_range/utf8_range-targets-release.cmake
+C:/vcpkg/installed/x64-windows/share/utf8_range/utf8_range-targets.cmake
+C:/vcpkg/installed/x64-windows/share/zlib/vcpkg-cmake-wrapper.cmake
+C:/vcpkg/scripts/buildsystems/vcpkg.cmake

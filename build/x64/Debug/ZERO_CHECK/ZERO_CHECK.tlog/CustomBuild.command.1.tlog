@@ -1,0 +1,10 @@
+^C:\USERS\ALEXA\DESKTOP\LLAVAWEBCAM\BUILD\CMAKEFILES\F54EFD32FAD0D31E910C879E04B8BB64\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/alexa/Desktop/LlavaWebCam -BC:/Users/alexa/Desktop/LlavaWebCam/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/alexa/Desktop/LlavaWebCam/build/LlavaWebCam.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
