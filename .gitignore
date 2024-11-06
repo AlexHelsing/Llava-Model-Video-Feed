@@ -34,7 +34,6 @@
 # Ignore all .build folders
 .build
 
-# Explicitly include the root-level .build folder
-!/.
+.out
 
 .vs/
