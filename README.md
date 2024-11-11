@@ -51,7 +51,7 @@ By working on this, I learned:
 - **Enhanced UI**: Add overlays, menus, or interaction options to make the application more user-friendly.
 
 ## Youtube Video
-[![Llava Webcam AI Integration](https://img.youtube.com/vi/IamS8hGH2mE.jpg)](https://www.youtube.com/watch?v=IamS8hGH2mE)
+[![Llava Webcam AI Integration](https://alexanderhelsing.com/assets/me.webp)](https://www.youtube.com/watch?v=IamS8hGH2mE)
 
 ## How to Run
 1. Clone this repository.
