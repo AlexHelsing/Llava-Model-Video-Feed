@@ -10,7 +10,10 @@
 
 std::mutex responseMutex;
 std::string responseString;
-std::atomic<bool> requestInProgress(false);
+std::atomic<int> latestRequestID(0);
+std::atomic<bool> requestInProgress(false); // Reintroduce requestInProgress
+
+
 
 // Callback to handle cURL response and extract the "response" field
 size_t WriteCallback(void* contents, size_t size, size_t nmemb, std::string* response) {
@@ -45,8 +48,8 @@ std::string sendCurlRequest(const std::string& base64Image) {
         curl_easy_setopt(curl, CURLOPT_URL, "http://localhost:11434/api/generate");
 
         std::string jsonData = "{"
-            "\"model\": \"llava:13b\", "
-            "\"prompt\": \"What is in this picture? Answer in 15 words or less\", "
+            "\"model\": \"llava:7b\", "
+            "\"prompt\": \"What is in this picture? Answer in 10 words or less\", "
             "\"images\": [\"" + base64Image + "\"]"
             "}";
 
@@ -92,17 +95,28 @@ std::string base64Encode(const std::vector<uchar>& buffer) {
     return encodedString;
 }
 
-// Function to process frame and add text
 void processFrame(cv::Mat& frame, const std::string& responseText) {
-    cv::putText(frame, responseText, cv::Point(10, 30), cv::FONT_HERSHEY_SIMPLEX, 0.6, cv::Scalar(255, 255, 255), 2);
+	cv::copyMakeBorder(frame, frame, 30, 0, 0, 0, cv::BORDER_CONSTANT, cv::Scalar(0, 0, 0));
+    cv::putText(frame, responseText, cv::Point(0, 20),
+        cv::FONT_HERSHEY_COMPLEX, 0.5,
+        cv::Scalar(0, 255, 0), 1);
 }
 
-void requestThreadFunction(const std::string& base64Image) {
+
+void requestThreadFunction(const std::string& base64Image, int requestID) {
     std::string newResponse = sendCurlRequest(base64Image);
-	std::lock_guard<std::mutex> lock(responseMutex);
-    responseString = newResponse;
-	requestInProgress = false;
+
+    // Update the response only if it's from the latest request
+    if (requestID == latestRequestID.load()) {
+        std::lock_guard<std::mutex> lock(responseMutex);
+        responseString = newResponse;
+    }
+
+    // Set requestInProgress to false after the request completes
+    requestInProgress = false;
 }
+
+
 
 int main() {
     cv::VideoCapture cap(0);
@@ -124,20 +138,34 @@ int main() {
             break;
         }
 
-        // Every 100 frames, capture image, encode, and send new cURL request
-        if (frameCounter % 100 == 0 && !requestInProgress) {
+        // Every 25 frames, capture image, encode, and send new cURL request
+        if (frameCounter % 35 == 0 && !requestInProgress.load()) {
+            // Prepare image for sending (resizing and encoding)
+            cv::Mat resizedFrame;
+            cv::resize(frame, resizedFrame, cv::Size(640, 360));
+
+            std::vector<int> compression_params = { cv::IMWRITE_JPEG_QUALITY, 50 };
             std::vector<uchar> buffer;
-            cv::imencode(".jpg", frame, buffer);
+            cv::imencode(".jpg", resizedFrame, buffer, compression_params);
+
             std::string base64Image = base64Encode(buffer);
 
-			requestInProgress = true;
-            // Get new response
-			std::thread(requestThreadFunction, base64Image).detach();
+            // Set requestInProgress to true before starting the request
+            requestInProgress = true;
+
+            // Increment and get the current request ID
+            int currentRequestID = ++latestRequestID;
+
+            // Launch the request thread with the current request ID
+            std::thread(requestThreadFunction, base64Image, currentRequestID).detach();
         }
 
         // Process and display frame
-        processFrame(frame, responseString);
-        cv::imshow("Webcam Test", frame);
+        {
+            std::lock_guard<std::mutex> lock(responseMutex);
+            processFrame(frame, responseString);
+        }
+        cv::imshow("LlavaStream", frame);
 
         // Break the loop if 'q' key is pressed
         char key = (char)cv::waitKey(1);

@@ -1,7 +1,7 @@
 # Llava Webcam AI Integration
 
 ## Overview
-This project connects a live webcam feed to a locally hosted Llava AI model (Llava:13b). Every 100th frame, the application captures an image from the webcam, sends it as a `cURL` request to the Llava model, and displays the AI's response directly on the video feed. The program leverages multithreading to ensure smooth video playback while interacting with the AI model asynchronously.
+This project connects a live webcam feed to a locally hosted Llava AI model (Llava:7b). Every 100th frame, the application captures an image from the webcam, sends it as a `cURL` request to the Llava model, and displays the AI's response directly on the video feed. The program leverages multithreading to ensure smooth video playback while interacting with the AI model asynchronously.
 
 ## Features
 - **Real-time Webcam Feed**: Captures live video from your webcam.
